@@ -6,8 +6,7 @@ import PropTypes from 'prop-types'
 import _ from 'lodash'
 
 const Main = (props) =>{
-
-    const {modalWindowOpen, modalWindowClose,  pageChangeHandler, photosFiltered, users, albums, loading, modalWindowShow, currentPage, selectedAlbumTitle, totalPages} = props;
+    const {modalWindowOpen, modalWindowClose,  pageChangeHandler, photosFiltered, users, albums, loading, modalWindowShow, selectedAlbumTitle, currentPage,  totalPages} = props;
 
     Main.propTypes = {
         modalWindowOpen: PropTypes.func,
@@ -18,8 +17,8 @@ const Main = (props) =>{
         albums: PropTypes.array,
         loading: PropTypes.bool,
         modalWindowShow: PropTypes.bool,
-        currentPage: PropTypes.number,
         selectedAlbumTitle: PropTypes.string,
+        currentPage: PropTypes.number,
         totalPages: PropTypes.number,
     };
 
@@ -60,12 +59,7 @@ const Main = (props) =>{
     );
 
     if (loading){content = <p className={classes.loading}>Loading Albums...</p>}
-
     return content
 };
-
-
-
-
 
 export default Main

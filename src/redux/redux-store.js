@@ -1,5 +1,5 @@
-import {combineReducers, createStore} from "redux";
-import fetchedDataReducer from "./albumsReducer";
+import {combineReducers, createStore} from 'redux'
+import fetchedDataReducer from './albumsReducer'
 
 
 let reducers = combineReducers({

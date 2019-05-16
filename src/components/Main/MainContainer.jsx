@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import {connect} from "react-redux";
-import Main from "./Main";
-import axios from "axios";
+import {connect} from 'react-redux'
+import Main from './Main'
+import axios from 'axios'
 import {
     setUsersAC,
     setAlbumsAC,
@@ -9,7 +9,7 @@ import {
     setCurrentPageAC,
     setSelectedAlbumTitleAC,
     setTotalPagesAC
-    } from "../../redux/actions";
+    } from '../../redux/actions';
 
 const MainContainer = (props) => {
     const [loading, setLoading] = useState(false);
@@ -105,7 +105,6 @@ let mapStateToProps = (store) => {
         totalPages: store.albumsReducer.totalPages
     }
 };
-
 
 let mapDispatchToProps = (dispatch) => {
     return {

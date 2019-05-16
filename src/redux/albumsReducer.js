@@ -5,7 +5,7 @@ import {
     SET_SELECTED_ALBUM_TITLE,
     SET_TOTAL_PAGES,
     SET_USERS
-    } from "./data-types";
+    } from './data-types'
 
 let initialState = {
     users: [],

@@ -28,7 +28,6 @@ const ModalWindow = (props) => {
         )
     });
 
-
     return(
         <div className={classes.modalWindow}>
             <header>
