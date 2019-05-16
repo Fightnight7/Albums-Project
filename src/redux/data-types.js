@@ -1,0 +1,6 @@
+export const SET_USERS = 'SET_USERS';
+export const SET_ALBUMS = 'SET_ALBUMS';
+export const SET_PHOTOS = 'SET_PHOTOS';
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+export const SET_SELECTED_ALBUM_TITLE = 'SET_SELECTED_ALBUM_TITLE';
+export const SET_TOTAL_PAGES = 'SET_TOTAL_PAGES';

@@ -1,0 +1,116 @@
+.modalWindow {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 70%;
+    min-height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Arial sans-serif;
+}
+
+.modalWindow > header {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    border-bottom: 2px solid #f6f6f6;
+    padding: 30px;
+}
+
+.modalWindow > header > .title {
+    color: #444548;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWindow > header > img {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin-top: -1%;
+}
+
+.modalWindow > header > img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.modalWindow > main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 72vh;
+    padding: 10px 50px;
+    position: relative;
+}
+
+.modalWindow > main > .albumImage {
+    margin: 10px 0;
+    width: 28%;
+    height: 170px;
+    background-color: #56595b;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+}
+
+.modalWindow > main > .albumImage > h3 {
+    color: #c9cbc7;
+    font-size: 21px;
+    text-align: center;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalWindow .pagination {
+    height: 9vh;
+}
+
+.pagesWindow {
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+    width: 36%;
+    color: #838383;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.previous {
+    padding: 10px;
+}
+
+.previous:hover {
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+.page {
+    padding: 10px 15px;
+    color: #0579f7;
+    border: none;
+    background-color: #fff;
+}
+
+.page:hover, .page:disabled{
+    color: #dbdbdb;
+    background-color: #007eff;
+    cursor: pointer;
+}
+
+.page:disabled {
+    cursor: auto;
+}
+
+.next {
+    padding: 10px;
+    color: #0579f7;
+}
